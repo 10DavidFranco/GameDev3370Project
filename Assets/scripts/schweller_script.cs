@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 //Ideas left to implement:
@@ -16,6 +17,9 @@ public class schweller_script : MonoBehaviour
     float attack_decider;
     public bool has_attacked;
     public bool onceflag = false;
+    public int health = 10;
+    private int half_health;
+    private bool less_than_half = false;
 
     public Transform plateAttackPoint;
     public GameObject platePrefab;
@@ -27,6 +31,7 @@ public class schweller_script : MonoBehaviour
         anim_rs = GetComponent<Animator>();
         anim_rs.SetBool("is_attacking", false);
         has_attacked = false;
+        half_health = health / 2;
     }
 
     // Update is called once per frame
@@ -37,16 +42,28 @@ public class schweller_script : MonoBehaviour
 
         //anim_rs.Play("schweller_attack");
         //anim_rs.Play("schweller_idle");
-        Attack();
+        if (Defeat())
+        {
+            anim_rs.SetBool("is_attacking", false);
+            Debug.Log("Schweller Defeated");
+            SceneManager.LoadScene("Game_Win");
+        }
+        else
+        {
+            checkLessThanHalf();
+            Attack();
+        }
+        
+        
     }
 
     
 
     void Attack()
     {
-        Debug.Log("Decreasing time!!!");
+        //Debug.Log("Decreasing time!!!");
         targetTime -= Time.deltaTime;
-        Debug.Log(targetTime);
+        //Debug.Log(targetTime);
         if(targetTime <= 0.0f)
         {
             timerEnded();
@@ -57,7 +74,8 @@ public class schweller_script : MonoBehaviour
     void timerEnded()
     {
         //float attackDecider;
-        Debug.Log("Timer has ended!");
+        //Debug.Log("Timer has ended!");
+        float scale;
         anim_rs.SetBool("is_attacking", true);
         if (!onceflag)
         {
@@ -72,7 +90,15 @@ public class schweller_script : MonoBehaviour
                     GameObject plate = Instantiate(platePrefab, plateAttackPoint.position, plateAttackPoint.rotation);
                 //fun idea to play with the tranform of the plate...
                 //back up idea if the tree does not work: He will roll plates of various random sizes at you...
-                    float scale = Random.Range(2.0f, 4.0f);
+                    if (less_than_half)
+                    {
+                        scale = Random.Range(3.0f, 4.0f);
+                    }
+                    else
+                    {
+                        scale = Random.Range(2.0f, 3.0f);
+                    }
+                    
                     plate.transform.localScale = new Vector3(scale, scale, scale);
                     onceflag = true;
                 
@@ -90,11 +116,49 @@ public class schweller_script : MonoBehaviour
 
     void timerReset()
     {
-        targetTime = Random.Range(3.0f, 5.0f);
+        if (less_than_half)
+        {
+            targetTime = Random.Range(3.0f, 4.0f);
+        }
+        else
+        {
+            targetTime = Random.Range(4.0f, 5.0f);
+        }
+        
         anim_rs.SetBool("is_attacking", false);
         onceflag = false;
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.tag == "bullet")
+        {
+            health--;
+        }
+    }
+
+    private bool Defeat()
+    {
+        if(health <= 0)
+        {
+ 
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+
+    }
+
+    private void checkLessThanHalf()
+    {
+        if(health < half_health)
+        {
+            Debug.Log("LESSSS THAN HALFFFF");
+            less_than_half = true;
+        }
+    }
     //void DetermineAttack()
     //{
     //    attack_decider = Random.Range(-10.0f, 10.0f);

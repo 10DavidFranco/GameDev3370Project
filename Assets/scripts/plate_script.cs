@@ -19,4 +19,14 @@ public class plate_script : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("Player hit!!!");
+            Destroy(gameObject);
+        }
+    }
+
 }

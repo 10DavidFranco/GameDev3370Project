@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4870540521659461711}
   m_Layer: 0
   m_Name: schweller
-  m_TagString: Untagged
+  m_TagString: schweller
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -204,6 +204,7 @@ MonoBehaviour:
   player: {fileID: 0}
   has_attacked: 0
   onceflag: 0
+  health: 10
   plateAttackPoint: {fileID: 0}
   platePrefab: {fileID: 0}
 --- !u!1001 &658711018291493413

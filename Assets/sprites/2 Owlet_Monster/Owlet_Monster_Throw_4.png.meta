@@ -5,15 +5,6 @@ TextureImporter:
   - first:
       213: -7729622224310971080
     second: Owlet_Monster_Throw_4_0
-  - first:
-      213: 6753913171628848721
-    second: Owlet_Monster_Throw_4_1
-  - first:
-      213: -8328232606506251501
-    second: Owlet_Monster_Throw_4_2
-  - first:
-      213: -4038720804866327846
-    second: Owlet_Monster_Throw_4_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -60,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 48
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -84,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -115,7 +106,7 @@ TextureImporter:
         x: 2
         y: 0
         width: 23
-        height: 27
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -126,72 +117,6 @@ TextureImporter:
       bones: []
       spriteID: 835daff4a8ddab490800000000000000
       internalID: -7729622224310971080
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Owlet_Monster_Throw_4_1
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 0
-        width: 24
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 156f4ceee38babd50800000000000000
-      internalID: 6753913171628848721
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Owlet_Monster_Throw_4_2
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 0
-        width: 22
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 31b8e5ab19c2c6c80800000000000000
-      internalID: -8328232606506251501
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Owlet_Monster_Throw_4_3
-      rect:
-        serializedVersion: 2
-        x: 98
-        y: 0
-        width: 23
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ada76f673d493f7c0800000000000000
-      internalID: -4038720804866327846
       vertices: []
       indices: 
       edges: []
@@ -211,9 +136,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Owlet_Monster_Throw_4_0: -7729622224310971080
-      Owlet_Monster_Throw_4_1: 6753913171628848721
-      Owlet_Monster_Throw_4_2: -8328232606506251501
-      Owlet_Monster_Throw_4_3: -4038720804866327846
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
