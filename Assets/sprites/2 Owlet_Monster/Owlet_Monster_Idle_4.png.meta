@@ -5,15 +5,6 @@ TextureImporter:
   - first:
       213: -2276138821381322966
     second: Owlet_Monster_Idle_4_0
-  - first:
-      213: 1316493835247018082
-    second: Owlet_Monster_Idle_4_1
-  - first:
-      213: 9140244220393237851
-    second: Owlet_Monster_Idle_4_2
-  - first:
-      213: -5013709923269499922
-    second: Owlet_Monster_Idle_4_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -60,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 48
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -84,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -114,7 +105,7 @@ TextureImporter:
         serializedVersion: 2
         x: 2
         y: 0
-        width: 23
+        width: 24
         height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -126,72 +117,6 @@ TextureImporter:
       bones: []
       spriteID: a27071c2dc78960e0800000000000000
       internalID: -2276138821381322966
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Owlet_Monster_Idle_4_1
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 0
-        width: 22
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 260e3e60b20254210800000000000000
-      internalID: 1316493835247018082
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Owlet_Monster_Idle_4_2
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 0
-        width: 23
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b5d2bdcf0bba8de70800000000000000
-      internalID: 9140244220393237851
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Owlet_Monster_Idle_4_3
-      rect:
-        serializedVersion: 2
-        x: 98
-        y: 0
-        width: 24
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ee3aba87369bb6ab0800000000000000
-      internalID: -5013709923269499922
       vertices: []
       indices: 
       edges: []
@@ -211,9 +136,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Owlet_Monster_Idle_4_0: -2276138821381322966
-      Owlet_Monster_Idle_4_1: 1316493835247018082
-      Owlet_Monster_Idle_4_2: 9140244220393237851
-      Owlet_Monster_Idle_4_3: -5013709923269499922
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
