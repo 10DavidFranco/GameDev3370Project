@@ -2,6 +2,7 @@ using System.Collections;
 using Unity.Mathematics;
 using Unity.Mathematics.Geometry;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class move_player : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class move_player : MonoBehaviour
     bool isDashing;
     bool canDash = true;
     TrailRenderer trailRenderer;
+    public int health = 3;
 
 
     float horizontalInput;
@@ -59,7 +61,7 @@ public class move_player : MonoBehaviour
             StartCoroutine(Dash());
         }
 
-
+        checkDeath();
     }
 
     private void FixedUpdate()
@@ -126,10 +128,36 @@ public class move_player : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+       
         isGrounded = true;
         animator.SetBool("isJumping", !isGrounded);
+
+       
     }
 
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        Debug.Log(other);
+        if (other.gameObject.CompareTag("bullet"))
+        {
+            Debug.Log("Player has been hit!!!");
+            
+            health--;
+            Debug.Log(health);
+            checkDeath();
+        }
+    }
+
+    private void checkDeath()
+    {
+        if(health <= 0)
+        {
+            Debug.Log("You Lost...");
+            SceneManager.LoadScene("Game_Over");
+        }
+    }
+
+   
 
 
 }

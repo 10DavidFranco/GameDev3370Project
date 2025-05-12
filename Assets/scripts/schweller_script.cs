@@ -155,7 +155,7 @@ public class schweller_script : MonoBehaviour
     {
         if(health < half_health)
         {
-            Debug.Log("LESSSS THAN HALFFFF");
+            //Debug.Log("LESSSS THAN HALFFFF");
             less_than_half = true;
         }
     }

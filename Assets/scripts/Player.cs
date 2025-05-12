@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -6,6 +7,7 @@ public class Player : MonoBehaviour
 
     public SpriteRenderer artworkSprite;
     private int selectedOption = 0;
+   
 
     void Start()
     {
@@ -34,4 +36,5 @@ public class Player : MonoBehaviour
     {
         PlayerPrefs.SetInt("SelectedOption", selectedOption);
     }
+    
 }

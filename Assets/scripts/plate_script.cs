@@ -24,7 +24,8 @@ public class plate_script : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Player hit!!!");
+            
+            
             Destroy(gameObject);
         }
     }

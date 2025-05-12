@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 293335009045443079}
   - component: {fileID: 775889892080592431}
   - component: {fileID: 8022473306648255952}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: barbell
-  m_TagString: Untagged
+  m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
