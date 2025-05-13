@@ -48,6 +48,7 @@ GameObject:
   - component: {fileID: 8916195474504288293}
   - component: {fileID: 1573539420186543817}
   - component: {fileID: 1904413665132507755}
+  - component: {fileID: 3400390630755957501}
   m_Layer: 0
   m_Name: Owl_Monster
   m_TagString: Player
@@ -352,7 +353,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.23288225, g: 0.98742133, b: 0.9762345, a: 1}
+      key0: {r: 1, g: 1, b: 1, a: 1}
       key1: {r: 1, g: 1, b: 1, a: 0}
       key2: {r: 0, g: 0, b: 0, a: 1}
       key3: {r: 0, g: 0, b: 0, a: 0}
@@ -406,3 +407,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firepoint: {fileID: 6974203111633150623}
   bulletPrefab: {fileID: 4946580602079902543, guid: 8f95076ebdbc19449b08dd3c2d64c0a9, type: 3}
+--- !u!114 &3400390630755957501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5840281263690234446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7015792db0260c24bb3c86885773ff57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterDB: {fileID: 11400000, guid: 40e52b69ecf62f74b8bdfd284fd9f9b8, type: 2}
+  artworkSprite: {fileID: 1320467524606624889}

@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class schweller_script : MonoBehaviour
 {
-    public static float targetTime = 10.0f;
+    public static float targetTime = 1.0f;
     private float targetTimecopy = targetTime;
     public float waitAfterAttack;
     public float timeOfAttack;
@@ -92,11 +92,11 @@ public class schweller_script : MonoBehaviour
                 //back up idea if the tree does not work: He will roll plates of various random sizes at you...
                     if (less_than_half)
                     {
-                        scale = Random.Range(3.0f, 4.0f);
+                        scale = Random.Range(5.0f, 6.0f);
                     }
                     else
                     {
-                        scale = Random.Range(2.0f, 3.0f);
+                        scale = Random.Range(3.0f, 4.0f);
                     }
                     
                     plate.transform.localScale = new Vector3(scale, scale, scale);
@@ -118,11 +118,11 @@ public class schweller_script : MonoBehaviour
     {
         if (less_than_half)
         {
-            targetTime = Random.Range(3.0f, 4.0f);
+            targetTime = Random.Range(0.0f, 0.25f);
         }
         else
         {
-            targetTime = Random.Range(4.0f, 5.0f);
+            targetTime = Random.Range(0.8f, 1.2f);
         }
         
         anim_rs.SetBool("is_attacking", false);

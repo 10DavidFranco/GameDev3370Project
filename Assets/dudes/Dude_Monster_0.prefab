@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 4063338114835053714}
   - component: {fileID: 205137669996362042}
   - component: {fileID: 7639220815401430147}
+  - component: {fileID: 4666815382898237214}
   m_Layer: 0
   m_Name: Dude_Monster_0
   m_TagString: Player
@@ -178,6 +179,7 @@ MonoBehaviour:
   dashspeed: 20
   dashduration: 0.25
   dashcooldown: 0.1
+  health: 3
   moveSpeed: 25
   jumpPower: 30
 --- !u!70 &1065224346272114175
@@ -374,6 +376,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firepoint: {fileID: 28315952120499214}
   bulletPrefab: {fileID: 4946580602079902543, guid: 8f95076ebdbc19449b08dd3c2d64c0a9, type: 3}
+--- !u!114 &4666815382898237214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3164161076376748510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7015792db0260c24bb3c86885773ff57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterDB: {fileID: 11400000, guid: 40e52b69ecf62f74b8bdfd284fd9f9b8, type: 2}
+  artworkSprite: {fileID: 139725340222473637}
 --- !u!1 &3640340026373704820
 GameObject:
   m_ObjectHideFlags: 0
