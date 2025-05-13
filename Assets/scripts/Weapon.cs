@@ -5,10 +5,11 @@ public class weapon : MonoBehaviour
     public Transform firepoint;
     public GameObject bulletPrefab;
     Animator animator;
-
+    AudioSource AudioSource;
     void Start()
     {
        animator = GetComponent<Animator>();     
+        AudioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -18,6 +19,7 @@ public class weapon : MonoBehaviour
         {
             animator.SetBool("isAttacking",true);
             Shoot();
+            AudioSource.Play();
         }
     }
 
